@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import React, {Suspense} from 'react';
 import './App.css';
+import HeaderComponent from './components/HeaderComponent';
+
+const LandingComponent = React.lazy(() => import('./components/LandingComponent'));
+const HomeComponent = React.lazy(() => import('./components/HomeComponent'));
+const UsefulComponent = React.lazy(() => import('./components/UsefulComponent'));
+const FeaturesComponent = React.lazy(() => import('./components/FeaturesComponent'));
+const TemplateComponent = React.lazy(() => import('./components/TemplateComponent'));
+const FooterComponent = React.lazy(() => import('./components/FooterComponent'))
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="App">
+      <Suspense fallback={null}>
+        <HeaderComponent />
+        <LandingComponent />
+        <HomeComponent/>
+        <UsefulComponent />
+        <FeaturesComponent />
+        <TemplateComponent />
+        <FooterComponent />
+      </Suspense>
+    </section>
   );
 }
 

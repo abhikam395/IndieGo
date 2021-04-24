@@ -1,0 +1,13 @@
+@import './../../assets/scss/common.scss';
+
+.landing{
+
+    &--size{
+        height: 100vh;
+        width: 100%;
+    }
+
+    &--theme{
+        background: linear-gradient(to left, $main-primary 5%, $semi-primary 40%, $light-primary 100%);
+    }
+}

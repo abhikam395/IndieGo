@@ -1,0 +1,53 @@
+@import './../../assets/scss/common.scss';
+
+.header{
+    display: flex;
+    align-items: center;
+    color: $secondary;
+
+    &--size{
+        height: 100px;
+        width: 100%;
+    }
+
+    &--theme{
+        background: linear-gradient(to left, $main-primary 5%, $semi-primary 40%, $light-primary 100%);
+    }
+
+    &__container{
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        // &--size{
+
+        // }
+
+        // &--theme{
+            
+        // }
+    }
+
+    &__left{
+        display: flex;
+        align-items: center;
+    }
+
+    &__menus{
+        margin-left: 40px;
+    }
+
+    &__right{
+
+    }
+
+    &__logo{
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }
+
+    &__title{
+        margin-left: 10px;
+    }
+}
