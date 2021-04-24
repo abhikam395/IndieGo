@@ -25,7 +25,8 @@ export default class HeaderComponent extends Component{
                         <HeaderNavbar />
                     </nav>
                     <div className="header__right">
-
+                        <button className="header__morebutton">MORE THEMES</button>
+                        <button className="header__buybutton">BUY NOW</button>
                     </div>
                 </section>
             </header>

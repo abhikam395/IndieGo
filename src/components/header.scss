@@ -38,7 +38,7 @@
     }
 
     &__right{
-
+        margin-left: auto;
     }
 
     &__logo{
@@ -49,5 +49,42 @@
 
     &__title{
         margin-left: 10px;
+    }
+
+    &__morebutton{
+        position: relative;
+        text-decoration: none;
+        border: 1px solid white;
+        padding: 10px 15px;
+        font-size: 13px;
+        border-radius: 2px;
+        outline: none;
+        color: white;
+        font-weight: 500;
+        background-color: transparent;
+
+        &:hover{
+            transform: translateY(-2px);
+            transition: transform .5s;
+            background-color: transparent;
+        }
+    }
+
+    &__buybutton{
+        border: none;
+        position: relative;
+        text-decoration: none;
+        border-radius: 2px;
+        padding: 10px 15px;
+        font-size: 13px;
+        background-color: white;
+        outline: none;
+        margin-left: 20px;
+        color: $main-primary;
+
+        &:hover{
+            transform: translateY(-2px);
+            transition: transform .5s;
+        }
     }
 }

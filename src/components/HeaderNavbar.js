@@ -83,7 +83,14 @@ export default class HeaderNavbar extends Component{
                             {this.renderSubMenus(menu.subMenus)}
                         </ul>
                     )}
-                    { menu.name === 'Components' && <HeaderNavbarComponents /> }
+                    { menu.name === 'Components' && (
+                        <article className="
+                            headernavbar__submenus 
+                            headernavbar__submenus--size 
+                            headernavbar__submenus--theme">
+                            <HeaderNavbarComponents menus={menu.subMenus}/>
+                        </article>
+                    ) }
                 </li>
             )
         })
